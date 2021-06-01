@@ -17,6 +17,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<db:select doc:name="Select" doc:id="09f0919c-ad45-4554-bab2-7085523dad49" config-ref="Database_Config">
 			<db:sql ><![CDATA[SELECT * FROM american]]></db:sql>
 		</db:select>
+		<logger level="INFO" doc:name="Logger" doc:id="03cb0bec-8b69-4629-ac8e-8cd438853657"/>
 		<ee:transform doc:name="Transform Message" doc:id="1689d8da-0f82-4bcc-bd5c-e90298929357" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
